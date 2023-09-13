@@ -12,7 +12,8 @@
     "watch": "webpack --config dev/webpack/webpack.dev.js",
     "test": "eslint --format codeframe --ext .js,.vue . && pug-lint server/views && jest",
     "cypress:open": "cypress open",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "package": "tar -czvf wiki.tar.gz assets config.sample.yml node_modules server package.json"
   },
   "repository": {
     "type": "git",
