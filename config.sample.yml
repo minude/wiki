@@ -1,22 +1,22 @@
 #######################################################################
-# CONFIGURATION                                             #
+# wiki 配置文件                                                        #
 #######################################################################
 
 # ---------------------------------------------------------------------
-# Port the server should listen to
+# 监听端口
 # ---------------------------------------------------------------------
 
 port: 3000
 
 # ---------------------------------------------------------------------
-# Database
+# 数据库
 # ---------------------------------------------------------------------
-# Supported Database Engines:
-# - postgres = PostgreSQL 9.5 or later
-# - mysql = MySQL 8.0 or later (5.7.8 partially supported, refer to docs)
-# - mariadb = MariaDB 10.2.7 or later
-# - mssql = MS SQL Server 2012 or later
-# - sqlite = SQLite 3.9 or later
+# 支持的数据库类型:
+# - postgres = PostgreSQL 9.5 及以上
+# - mysql = MySQL 8.0 及以上
+# - mariadb = MariaDB 10.2.7 及以上
+# - mssql = MS SQL Server 2012 及以上
+# - sqlite = SQLite 3.9 及以上
 
 db:
   type: postgres
@@ -29,7 +29,7 @@ db:
   db: wiki
   ssl: false
 
-  # Optional - PostgreSQL / MySQL / MariaDB only:
+  # 可选项 - PostgreSQL / MySQL / MariaDB only:
   # -> Uncomment lines you need below and set `auto` to false
   # -> Full list of accepted options: https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options
   sslOptions:
@@ -48,7 +48,7 @@ db:
   storage: path/to/database.sqlite
 
 #######################################################################
-# ADVANCED OPTIONS                                                    #
+# 高级选项                                                             #
 #######################################################################
 # Do not change unless you know what you are doing!
 
